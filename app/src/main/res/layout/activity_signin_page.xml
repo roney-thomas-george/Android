@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image2"
+    tools:context="com.example.mca003.myapplication.signin_page">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/txtsecnam"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/txtfrstname"
+        android:layout_toRightOf="@+id/txtfrstname"
+        android:hint="Second Name" />
+
+
+    <EditText
+        android:id="@+id/txtfrstname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtsecnam"
+        android:layout_alignBottom="@+id/txtsecnam"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="First Name" />
+
+    <EditText
+        android:id="@+id/txtusrnm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtemail"
+        android:layout_marginTop="20dp"
+        android:hint="Select a user name" />
+
+
+    <Button
+        android:id="@+id/btnsign"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnmenu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnmenu"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/button_style"
+        android:text="SIGN UP"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/btnmenu"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnsign"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginStart="95dp"
+
+        android:text="MENU"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtsecnam"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtpas2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtusrnm"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtpas1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtpas2"
+        android:ems="10"
+        android:hint="RE ENTER PASSWORD"
+        android:inputType="textEmailAddress" />
+
+</RelativeLayout>
